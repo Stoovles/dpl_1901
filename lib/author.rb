@@ -4,7 +4,8 @@ class Author
               :last_name,
               :books
 
-  def initialize(params)
+  def initialize(params) #when I call author, it gives more than just the object
+    #I have a feeling I am supposed to approach this in a different way...
     @first_name = params[:first_name]
     @last_name = params[:last_name]
     @books = []

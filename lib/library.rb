@@ -16,9 +16,22 @@ class Library
   end
 
   def card_catalogue
-    ordered_books = @books.sort_by do |book|
+    @books.sort_by do |book|
       book.author_last_name
     end
+  end
+
+  def find_by_author(author_full_name)
+    binding.pry
+
+    last_name = author_full_name.split[1]
+    find_author = @books.group_by do |book|
+      book.author_last_name == last_name
+      book.title
+    end
+  end
+
+  def find_by_publication_date(year)
   end
 
 end

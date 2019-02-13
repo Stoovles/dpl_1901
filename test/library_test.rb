@@ -67,4 +67,19 @@ class LibraryTest < Minitest::Test
 
     assert_equal [fifth_season[0], kingdoms[0], mockingbird[0]], dpl.card_catalogue
   end
+
+  # def test_it_can_find_book_by_author
+  #   nk_jemisin = Author.new({first_name: "N.K.", last_name: "Jemisin"})
+  #   fifth_season = nk_jemisin.add_book("The Fifth Season", "November 3, 2015")
+  #   kingdoms = nk_jemisin.add_book("The Hundred Thousand Kingdoms", "2010")
+  #
+  #   harper_lee  = Author.new({first_name: "Harper", last_name: "Lee"})
+  #   mockingbird = harper_lee.add_book("To Kill a Mockingbird", "July 11, 1960")
+  #   dpl = Library.new
+  #   dpl.add_to_collection(fifth_season)
+  #   dpl.add_to_collection(mockingbird)
+  #   dpl.add_to_collection(kingdoms)
+  #   dpl.find_by_author("N.K. Jemisin")
+  #   assert_equal []
+  # end
 end

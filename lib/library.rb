@@ -15,4 +15,10 @@ class Library
     end
   end
 
+  def card_catalogue
+    ordered_books = @books.sort_by do |book|
+      book.author_last_name
+    end
+  end
+
 end

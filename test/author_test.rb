@@ -20,7 +20,7 @@ class AuthorTest < Minitest::Test
     #should also test that it's the correct book and attributes
     nk_jemisin = Author.new({first_name: "N.K.", last_name: "Jemisin"})
     nk_jemisin.add_book("The Fifth Season", "November 3, 2015")
-    
+
     assert_instance_of Book, nk_jemisin.books.first
 
     nk_jemisin.add_book("The Hundred Thousand Kingdoms", "2010")
